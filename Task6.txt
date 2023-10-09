@@ -1,0 +1,10 @@
+﻿Console.WriteLine("Enter the number: ");
+string number = Console.ReadLine();
+int n = int.Parse(number);
+
+int sum = 0;
+for (int i = 1; i <= n; i++)
+{
+    sum +=i;
+}
+Console.WriteLine("The sum of the numbers from 1 to n is equal to: " + sum);

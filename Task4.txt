@@ -1,0 +1,3 @@
+﻿int a = 5;
+int sq = a * a;
+Console.WriteLine("Square of a = " + sq);

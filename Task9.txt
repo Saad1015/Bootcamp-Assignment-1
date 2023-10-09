@@ -1,0 +1,11 @@
+﻿Console.WriteLine("Enter the number: ");
+string number = Console.ReadLine();
+int no = int.Parse(number);
+
+int num =1;
+
+for (int i = 1; i <= no; i++)
+{
+    num = num * i;
+}
+Console.WriteLine("The factorial of the given number n is " + num);
