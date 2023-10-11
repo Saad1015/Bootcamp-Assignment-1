@@ -1,0 +1,42 @@
+using System;
+
+public class ArraySearch
+{
+    public static void Main(string[] args)
+    {
+        int[] array = new int[5];
+        int n;
+
+        // Prompt the user to enter the 5 elements of the array.
+        Console.WriteLine("Enter the 5 elements of the array: ");
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = int.Parse(Console.ReadLine());
+        }
+
+        // Prompt the user to enter the number to search for.
+        Console.WriteLine("Enter the number to search for: ");
+        n = int.Parse(Console.ReadLine());
+
+        // Search for the number in the array.
+        bool found = false;
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] == n)
+            {
+                found = true;
+                break;
+            }
+        }
+
+        // Print the result of the search.
+        if (found)
+        {
+            Console.WriteLine("The number {0} is present in the array.", n);
+        }
+        else
+        {
+            Console.WriteLine("The number {0} is not present in the array.", n);
+        }
+    }
+}
